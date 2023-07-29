@@ -1,0 +1,51 @@
+<!-- 
+Programmer Name : Elden Zheng, BSc(Hons) Software Engineering, TP058070, APD3F2211SE
+Program Name: Login.html
+Description: Login Page
+First Written on: Friday, 16-June-2023
+Edited on: Friday, 21-Jul-2023
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="UI.css"rel="stylesheet"type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .login { grid-area: login; }
+        .EZmanagement { grid-area: logo; }
+        .backgroundLogin { grid-area: background; }
+    </style>
+</head>
+<body style="background-image:url('Images/background.gif');background-size:cover; background-repeat:no-repeat;">
+    <div class="containerLogin">
+        <div class="backgroundLogin"> 
+            Work and Employee Management Made EZ
+        </div>
+        <div class="EZmanagement">
+            <img style = "width: 100px;" src = "Images/EZgold.png" alt = "Logo">
+            <h1 class="EZname">EZ Management</h1>
+        </div>
+        <form action="Logging-in.php" method="post">
+            <div class="login">        
+                &nbsp;
+                <label>E-Mail:</label><br>
+                <input type="text" name="txtEMail"  placeholder="Input E-Mail" autofocus="autofocus" required>
+                <br><br>
+                <label>Password:</label><br>
+                <input type="password" name="txtPass" placeholder="Input Password" required>
+                <br><br>
+                
+                <div>
+                    <button type="Submit" name="BtnLog">
+                    Login
+                    </button>
+                    <br><br><br><br><br><br>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
